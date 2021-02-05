@@ -1,10 +1,15 @@
 function snakeToCamel(str) {
-    for (let s of str) {
-        if (s === '_') {
-            str[s + 1].toUpperCase();
-            str[s] = "";
+    let splitString = str.split("")
+    let results = []
+    for (let i = 0; i < splitString.length; i++) {
+        if (splitString[i] !== '_' && splitString[i - 1] === '_') {
+            splitString[i] = str.charAt(i).toUpperCase();
+        }
+        if (splitString[i] !== '_') {
+            results.push(splitString[i])
         }
     }
-    return str;
+    results = results.join('')
+    return results
 }
 

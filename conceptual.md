@@ -3,9 +3,10 @@
 Answer the following questions below:
 
 - What is RESTful routing?
-RESTful routing is a set of conventions for setting up routes based on http verbs. 
+RESTful routing is a set of conventions for setting up routes based on http verbs. It aims to map HTTP methods and CRUD actions together in a common-sense pattern. It allows for cleaner, coherent url paths for users AND developers
 
 - What is a resource?
+
 
 - When building a JSON API why do you not include routes to render a form that when submitted creates a new user?
 
